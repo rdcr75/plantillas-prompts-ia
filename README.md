@@ -90,8 +90,8 @@ Licencia MIT — Libre de usar, modificar y compartir.
 
 - [Guía Prompt Engineering de OpenAI](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Guía Prompt Engineering de Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
-- [Mi GitHub](https://github.com/yourusername)
-- [Mi Perfil Toptal](https://www.toptal.com/profile/ruben-cabrera)
+- [Mi GitHub](https://github.com/rdcr75)
+- [Mi Perfil Toptal](https://www.toptal.com/profile/rdcr75)
 
 ---
 
