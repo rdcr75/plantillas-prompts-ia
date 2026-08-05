@@ -1,0 +1,61 @@
+name: Validate Prompts
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Validate Markdown Files
+      run: |
+        # Verificar que todos los archivos .md existan
+        if [ ! -f README.md ]; then
+          echo "README.md no encontrado"
+          exit 1
+        fi
+        
+        # Verificar estructura de archivos
+        for file in prompts/*.md; do
+          if grep -q "## 🎯 Propósito" "$file"; then
+            echo "✓ $file tiene sección Propósito"
+          else
+            echo "✗ $file falta sección Propósito"
+            exit 1
+          fi
+          
+          if grep -q "## 📋 Plantilla" "$file"; then
+            echo "✓ $file tiene sección Plantilla"
+          else
+            echo "✗ $file falta sección Plantilla"
+            exit 1
+          fi
+        done
+        
+        echo "✓ Validación completada"
+    
+    - name: Check for API Keys
+      run: |
+        if grep -r "sk_live_" . --include="*.md"; then
+          echo "✗ API keys encontradas en archivos"
+          exit 1
+        fi
+        if grep -r "OPENAI_API_KEY=" . --include="*.md"; then
+          echo "✗ Claves encontradas en archivos"
+          exit 1
+        fi
+        echo "✓ Sin claves sensibles"
+    
+    - name: Validate JSON (si aplica)
+      run: |
+        for file in *.json; do
+          if [ -f "$file" ]; then
+            python3 -m json.tool "$file" > /dev/null && echo "✓ $file es JSON válido" || (echo "✗ $file tiene JSON inválido" && exit 1)
+          fi
+        done

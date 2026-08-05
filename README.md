@@ -38,13 +38,18 @@ Organizadas por dominio (Arquitectura, Calidad de Código, Documentación, Depur
 
 ### Ejemplo: Arquitectura de Software
 
+[Copia el prompt desde prompts/arquitecto-software-asistente.md]
 
+[Reemplaza: [NOMBRE_TU_SISTEMA] con "Sistema de Procesamiento de Pagos"]
+[Reemplaza: [RESTRICCIONES] con "Debe manejar 10k transacciones/segundo"]
 
+→ Pega en ChatGPT/Claude
+→ Obtén recomendaciones detalladas de arquitectura
 
 ## 📋 Prompts Disponibles
 
 | Prompt | Caso de Uso | Complejidad |
-|--------|-------------|-----------|
+| --- | --- | --- |
 | arquitecto-software-asistente | Diseño de sistemas, decisiones arquitectónicas | Avanzado |
 | experto-revision-codigo | Análisis de calidad de código, optimización | Intermedio |
 | generador-documentacion-tecnica | Auto-generar docs desde código | Intermedio |

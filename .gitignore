@@ -1,6 +1,7 @@
 # Contribuir a Plantillas de Prompts de IA
 
-¡Gracias por tu interés en contribuir! Este documento explica cómo ayudar a mejorar este repositorio.
+¡Gracias por tu interés en contribuir! Este documento explica cómo ayudar a 
+mejorar este repositorio.
 
 ## 🤝 Cómo Contribuir
 
@@ -17,28 +18,24 @@ Hay varias formas de contribuir:
 ### Opción A: Agregar un Nuevo Prompt
 
 1. **Fork el repositorio**
-
 ```bash
    git clone https://github.com/tu-usuario/plantillas-prompts-ia.git
    cd plantillas-prompts-ia
 ```
 
 2. **Crea una rama**
-
 ```bash
    git checkout -b feature/nuevo-prompt-[nombre]
    # Ejemplo: feature/nuevo-prompt-testing
 ```
 
 3. **Crea el archivo del prompt**
-
 ```bash
    # En carpeta prompts/
    touch prompts/nombre-descriptivo.md
 ```
 
 4. **Estructura del Prompt**
-
 ```markdown
    # Prompt: [Nombre Descriptivo]
 
@@ -65,12 +62,10 @@ Hay varias formas de contribuir:
 ```
 
 5. **Actualiza README.md**
-
    - Agrega el nuevo prompt a la tabla de "Prompts Disponibles"
    - Mantén orden alfabético
 
 6. **Commit y Push**
-
 ```bash
    git add prompts/nombre-descriptivo.md
    git add README.md
@@ -79,7 +74,6 @@ Hay varias formas de contribuir:
 ```
 
 7. **Crea un Pull Request**
-
    - Ve a GitHub
    - Click "New Pull Request"
    - Describe qué agrega el prompt
@@ -89,38 +83,32 @@ Hay varias formas de contribuir:
 ### Opción B: Mejorar un Prompt Existente
 
 1. **Fork y rama**
-
 ```bash
    git checkout -b improvement/[nombre-prompt]
 ```
 
 2. **Edita el archivo**
-
    - Mejora claridad
    - Agrega más ejemplos
    - Refina las instrucciones
 
 3. **Explica tu cambio**
-
 ```bash
    git commit -m "improve: [qué mejoraste] en [nombre-prompt]"
 ```
 
 4. **Pull Request**
-
    - Describe qué mejoró
    - Proporciona antes/después si es relevante
 
 ### Opción C: Agregar un Ejemplo
 
 1. **Crea archivo en ejemplos/**
-
 ```bash
    touch ejemplos/ejemplo-tu-caso-uso.md
 ```
 
 2. **Estructura del Ejemplo**
-
 ```markdown
    # Ejemplo: [Nombre Descriptivo]
 
@@ -141,7 +129,6 @@ Hay varias formas de contribuir:
 ```
 
 3. **Commit y PR**
-
 ```bash
    git add ejemplos/ejemplo-tu-caso-uso.md
    git commit -m "docs: agregar ejemplo [caso-uso]"
@@ -155,7 +142,6 @@ Hay varias formas de contribuir:
    - Describe qué no funcionó
 
 2. **Template para Issues**
-
 ```markdown
    **Prompt Afectado:** [nombre]
 
@@ -181,7 +167,6 @@ Hay varias formas de contribuir:
 Antes de hacer commit, verifica:
 
 ### Para Nuevos Prompts
-
 - [ ] Nombre descriptivo en archivo
 - [ ] Propósito claro y conciso
 - [ ] Plantilla tiene instrucciones claras
@@ -193,7 +178,6 @@ Antes de hacer commit, verifica:
 - [ ] Sin errores ortográficos
 
 ### Para Ejemplos
-
 - [ ] Contexto claro
 - [ ] Problema bien definido
 - [ ] Prompt usado incluido completo
@@ -201,7 +185,6 @@ Antes de hacer commit, verifica:
 - [ ] Valores sensibles censurados (API keys, etc.)
 
 ### Para Mejoras
-
 - [ ] Cambio mejora claridad/utilidad
 - [ ] No cambia intención original
 - [ ] Mantiene estructura
@@ -216,6 +199,7 @@ Usar kebab-case (minúsculas con guiones):
 ❌ GeneradorDocumentacionTecnica.md
 ❌ generador_documentacion.md
 
+
 ### Titles de Prompts
 
 Usar formato consistente:
@@ -226,7 +210,6 @@ Usar formato consistente:
 
 
 ### Formato de Código
-
 ```markdown
 Para prompts en texto plano:
 ---
@@ -259,30 +242,27 @@ Para código:
 📊 Resultados
 🤝 Contribuciones
 
+
 ## 🔍 Criterios de Aceptación
 
 Tu contribución será aceptada si:
 
 ✅ **Calidad**
-
 - Prompt es claro y funcionable
 - Instrucciones son específicas
 - Ejemplo es realista
 
 ✅ **Utilidad**
-
 - Resuelve un problema real
 - Aplicable para desarrolladores
 - Proporciona valor
 
 ✅ **Formato**
-
 - Sigue estructura establecida
 - Sin errores ortográficos
 - README.md actualizado
 
 ✅ **Originalidad**
-
 - No es copia exacta de otro repositorio
 - Aporta perspectiva nueva
 - Mejora el conjunto existente
@@ -302,14 +282,12 @@ Tu PR podría ser rechazada si:
 ## 💬 Comunicación
 
 ### Si tu PR es rechazada
-
 - No te desanimes, es normal
 - Lee los comentarios de revisión
 - Mejora basándote en feedback
 - Reabre el PR con cambios
 
 ### Si tienes dudas
-
 - Abre una Issue de "Pregunta"
 - Comenta en un PR existente
 - Diseña tu prompt primero en tu LLM favorito
@@ -319,31 +297,26 @@ Tu PR podría ser rechazada si:
 Inspiración de prompts que faltan:
 
 ### Arquitectura
-
 - [ ] Prompt para diseño de base de datos
 - [ ] Prompt para selección de framework
 - [ ] Prompt para análisis de trade-offs
 
 ### Código
-
 - [ ] Prompt para refactorización
 - [ ] Prompt para optimización de algoritmos
 - [ ] Prompt para análisis de seguridad
 
 ### Documentación
-
 - [ ] Prompt para README generators
 - [ ] Prompt para API docs
 - [ ] Prompt para changelog
 
 ### Testing
-
 - [ ] Prompt para test strategy
 - [ ] Prompt para test case generation
 - [ ] Prompt para debugging
 
 ### DevOps
-
 - [ ] Prompt para CI/CD design
 - [ ] Prompt para infrastructure as code
 - [ ] Prompt para disaster recovery
